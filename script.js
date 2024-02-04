@@ -1,13 +1,9 @@
-
-//Fetch the source code using javascript
-//const src_code=
-
-const url="https://localhost:4040/predict/ {src_code}"
-fetch(url)
-    .then(data => data.json())
-    .then(patternData => {
-        const mainText = jokeData.attachments[0].text;
-        const patternElement = document.getElementById('pattern');
-
-        patternElement.innerHTML = mainText;
-    })
+//current_url=window.location.href;
+const current_url = "https://www.flipkart.com/"
+const url="https://localhost:4040/predict?url="+current_url;
+async function fetchData() {
+    const res=await fetch(url);
+    const record=await res.json();
+    document.getElementById("pattern").innerHTML=record;
+}
+fetchData();
