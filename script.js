@@ -2,7 +2,7 @@
 //Fetch the source code using javascript
 //const src_code=
 
-const url="https://localhost:5000/predict/ {src_code}"
+const url="https://localhost:4040/predict/ {src_code}"
 fetch(url)
     .then(data => data.json())
     .then(patternData => {
