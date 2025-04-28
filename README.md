@@ -7,4 +7,4 @@ Steps to use product->
 5. Load unpacked -> select the Dark_EXT folder and upload it.
 6. The extension is ready to use.
 7. Open any ecommerce website go to extension -> Click on extension logo.
-8. You will get the info about detected dark patterns as a popup message.
+8. You will get the info about detected dark patterns as a pop-up message.
